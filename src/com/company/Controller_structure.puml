@@ -1,0 +1,241 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": ""
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false // root node is included
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.company.Controller"
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_950484093 { 
+   	label=company
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Client2071347952[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Client</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   id: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tArrival: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   tService: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ compareTo(o: Object): int</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Coada2071347952[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Coada</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   averageWaitingTime: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   id: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   maxClients: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nrOfClients: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   peak: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   queue: ArrayList&lt;Client&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   time: AtomicInteger [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   waitingTime: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   working: boolean [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addClient(client: Client)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ run()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Controller2071347952[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Controller</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   manager: Manager [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   shop: Shop [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   view: View_Data [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Manager2071347952[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Manager</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   shop: Shop [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ putInQueue(client: Client, index: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ run()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ searchBestQueue(): int</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Shop2071347952[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Shop</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   clients: ArrayList&lt;Client&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   maximumArrival: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   maximumService: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   minimumArrival: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   minimumService: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   myFile: File [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   myWriter: FileWriter [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nrClients: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nrQueues: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   queues: ArrayList&lt;Coada&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   simulationTime: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   time: AtomicInteger [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   view: View_Data [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ generateClients()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ generateQueues()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ printDetails()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ printFinalDetails()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ showClients()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+View_Data2071347952[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)View_Data</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   button: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   clientArrivalTime: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   clientArrivalTimeHighText: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   clientArrivalTimeLowText: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   frame: JFrame [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nrOfClients: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nrOfClientsText: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nrOfQueues: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nrOfQueuesText: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   panel: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   panel1: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   panel2: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   panel3: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   panel4: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   panel5: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   serviceTime: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   serviceTimeHighText: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   serviceTimeLowText: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   simulationTime: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   simulationTimeText: JTextField [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addActionListener(a: ActionListener)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Coada2071347952 -> Client2071347952[label="queue
+[0..*]"];
+Controller2071347952 -> Manager2071347952[label="manager
+[0..1]"];
+Controller2071347952 -> Shop2071347952[label="shop
+[0..1]"];
+Controller2071347952 -> View_Data2071347952[label="view
+[0..1]"];
+Manager2071347952 -> Shop2071347952[label="shop
+[0..1]"];
+Shop2071347952 -> Client2071347952[label="clients
+[0..*]"];
+Shop2071347952 -> Coada2071347952[label="queues
+[0..*]"];
+Shop2071347952 -> View_Data2071347952[label="view
+[0..1]"];
+    
+}
+@enduml

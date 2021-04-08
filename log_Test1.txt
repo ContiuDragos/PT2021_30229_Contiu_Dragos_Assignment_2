@@ -1,0 +1,313 @@
+Input
+Nr. queues:2
+Nr. clients:4
+Simulation Time:60
+Tmin arrival:2
+Tmax arrival:30
+Tmin service:2
+Tmax service4
+Random generated clients
+ (0,4,3)  (1,11,2)  (2,15,3)  (3,20,2) 
+Current time: 0
+Waiting list:  (0,4,3)  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 1
+Waiting list:  (0,4,3)  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 2
+Waiting list:  (0,4,3)  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 3
+Waiting list:  (0,4,3)  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 4
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0:  (0,4,3) 
+Coada 1: closed
+
+Current time: 5
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0:  (0,4,2) 
+Coada 1: closed
+
+Current time: 6
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0:  (0,4,1) 
+Coada 1: closed
+
+Current time: 7
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 8
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 9
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 10
+Waiting list:  (1,11,2)  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 11
+Waiting list:  (2,15,3)  (3,20,2) 
+Coada 0:  (1,11,2) 
+Coada 1: closed
+
+Current time: 12
+Waiting list:  (2,15,3)  (3,20,2) 
+Coada 0:  (1,11,1) 
+Coada 1: closed
+
+Current time: 13
+Waiting list:  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 14
+Waiting list:  (2,15,3)  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 15
+Waiting list:  (3,20,2) 
+Coada 0:  (2,15,3) 
+Coada 1: closed
+
+Current time: 16
+Waiting list:  (3,20,2) 
+Coada 0:  (2,15,2) 
+Coada 1: closed
+
+Current time: 17
+Waiting list:  (3,20,2) 
+Coada 0:  (2,15,1) 
+Coada 1: closed
+
+Current time: 18
+Waiting list:  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 19
+Waiting list:  (3,20,2) 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 20
+Waiting list: 
+Coada 0:  (3,20,2) 
+Coada 1: closed
+
+Current time: 21
+Waiting list: 
+Coada 0:  (3,20,1) 
+Coada 1: closed
+
+Current time: 22
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 23
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 24
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 25
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 26
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 27
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 28
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 29
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 30
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 31
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 32
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 33
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 34
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 35
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 36
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 37
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 38
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 39
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 40
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 41
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 42
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 43
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 44
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 45
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 46
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 47
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 48
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 49
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 50
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 51
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 52
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 53
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 54
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 55
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 56
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 57
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 58
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Current time: 59
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+
+Statistics
+Coada 0: avgTime=0.0 peak at 4 with 1 clients
+Coada 1: avgTime=NaN peak at 0 with 0 clients

@@ -1,0 +1,96 @@
+Input
+Nr. queues:5
+Nr. clients:5
+Simulation Time:10
+Tmin arrival:2
+Tmax arrival:3
+Tmin service:2
+Tmax service3
+Random generated clients
+ (0,2,2)  (1,2,2)  (2,2,2)  (3,2,2)  (4,2,2) 
+Current time: 0
+Waiting list:  (0,2,2)  (1,2,2)  (2,2,2)  (3,2,2)  (4,2,2) 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 1
+Waiting list:  (0,2,2)  (1,2,2)  (2,2,2)  (3,2,2)  (4,2,2) 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 2
+Waiting list: 
+Coada 0:  (0,2,2) 
+Coada 1:  (1,2,2) 
+Coada 2:  (2,2,2) 
+Coada 3:  (3,2,2) 
+Coada 4:  (4,2,2) 
+
+Current time: 3
+Waiting list: 
+Coada 0:  (0,2,1) 
+Coada 1:  (1,2,1) 
+Coada 2:  (2,2,1) 
+Coada 3:  (3,2,1) 
+Coada 4:  (4,2,1) 
+
+Current time: 4
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 5
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 6
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 7
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 8
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Current time: 9
+Waiting list: 
+Coada 0: closed
+Coada 1: closed
+Coada 2: closed
+Coada 3: closed
+Coada 4: closed
+
+Statistics
+Coada 0: avgTime=0.0 peak at 2 with 1 clients
+Coada 1: avgTime=0.0 peak at 2 with 1 clients
+Coada 2: avgTime=0.0 peak at 2 with 1 clients
+Coada 3: avgTime=0.0 peak at 2 with 1 clients
+Coada 4: avgTime=0.0 peak at 2 with 1 clients

@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+(View) as (View)
+
+User -> (View)
+(View) --> (Controller)
+(Controller) --> (Shop)
+
+(Controller) --> (Manager)
+(Manager) --> (Shop)
+
+(Controller) -->(View)
+(View) -->(txtFile)
+(txtFile) --> User
+@enduml
